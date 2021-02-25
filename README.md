@@ -1,7 +1,7 @@
 # nlw4-trilhaNode
 Evento NextLevelWeek #4 da RocketSeat
 
-## aula01 22/02/2021 - #RumoAoPróximoNível
+## aula01 22/02/2021 - #rumoaoproximonivel
 
 ### Setup inicial de um projeto Node.js
 
@@ -39,7 +39,7 @@ Criação do tsconfig.json
 ```
 
 Para rodar a aplicação: `$ yarn dev `
-## aula02 23/02/2021 - Banco de Dados
+## aula02 23/02/2021 - Banco de Dados #jornadainfinita
 
 ### Modelo Entidade Relacionamento
 ![Modelo](https://github.com/tarcnux/nlw4-trilhaNode/blob/main/ModeloEntidadeRelacionamento.png)
