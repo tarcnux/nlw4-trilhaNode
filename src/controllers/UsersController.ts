@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { getCustomRepository } from 'typeorm';
 import { UsersRepository } from '../repositories/UsersRepository';
 
-class UserController {
+class UsersController {
     async create(request: Request, response: Response) {
         //Recebe os dados da API
         const { name, email } = request.body;
@@ -33,8 +33,8 @@ class UserController {
         //Armazena no banco de dados a entidade criada acima
         await usersRepository.save(user);
 
-        return response.json(user);
+        return response.status(201).json(user);
     }
 }
 
-export { UserController };
+export { UsersController };
