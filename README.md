@@ -89,3 +89,14 @@ Para rodar a Migration e criar a tabela **users**
 `$ yarn typeorm migration:run` (Roda todas as Migrations)
 
 Para faze rum **Rollback** desfazendo o comando anterior, basta usar `$ yarn typeorm migration:revert` 
+
+#### Controller, Model e Repository
+Para manipulação da tabela foi criado um controller, um model e um usersRepository.
+
+A responsabilidade de criação do **id** será da aplicação e não do banco de dados, para tanto é necessário importar a biblioteca **uuid** `$ yarn add uuid` bem como seus tipos `$ yarn add -D @types/uuid`
+
+Importante configurar no **ormconfig.json** o caminho das entidades, vide trecho do arquivo abaixo:
+
+```
+"entities": ["./src/models/*.ts"],
+```
