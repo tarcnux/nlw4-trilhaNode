@@ -1,6 +1,6 @@
-import express, { Request, Response } from 'express';
-import { getRepository } from 'typeorm';
-import { User } from '../models/User';
+import { Request, Response } from 'express';
+import { getCustomRepository } from 'typeorm';
+import { UsersRepository } from '../repositories/UsersRepository';
 
 class UserController {
     async create(request: Request, response: Response) {
@@ -8,7 +8,7 @@ class UserController {
         const { name, email } = request.body;
 
         //Criação do repositório com funções de acesso ao banco de dados
-        const usersRepository = getRepository(User);
+        const usersRepository = getCustomRepository(UsersRepository);
 
         
         

@@ -1,7 +1,7 @@
 # nlw4-trilhaNode
 Evento NextLevelWeek #4 da RocketSeat
 
-## aula01 22/02/2021 - #rumoaoproximonivel
+## aula01 22/02/2021 - Rumo ao próximo nível - #rumoaoproximonivel
 
 ### Setup inicial de um projeto Node.js
 
@@ -39,7 +39,7 @@ Criação do tsconfig.json
 ```
 
 Para rodar a aplicação: `$ yarn dev `
-## aula02 23/02/2021 - Banco de Dados #jornadainfinita
+## aula02 23/02/2021 - Banco de Dados - #jornadainfinita
 
 ### Modelo Entidade Relacionamento
 ![Modelo](https://github.com/tarcnux/nlw4-trilhaNode/blob/main/ModeloEntidadeRelacionamento.png)
@@ -100,3 +100,9 @@ Importante configurar no **ormconfig.json** o caminho das entidades, vide trecho
 ```
 "entities": ["./src/models/*.ts"],
 ```
+
+## aula03 24/02/2021 - Testando a nossa aplicação - #
+
+O objetivo desta aula é refatorar o código, separando responsabilidades. Criação de testes. Criação da tabela de pesquisas.
+
+Não é responsabilidade do Repository ter acesso ao Banco de dados, por isso, isolar o Repository, um dos focos desta aula.
