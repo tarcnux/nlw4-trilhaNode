@@ -106,3 +106,10 @@ Importante configurar no **ormconfig.json** o caminho das entidades, vide trecho
 O objetivo desta aula é refatorar o código, separando responsabilidades. Criação de testes. Criação da tabela de pesquisas.
 
 Não é responsabilidade do Repository ter acesso ao Banco de dados, por isso, isolar o Repository, um dos focos desta aula.
+
+Para gerar a Migrations **CreateSurveys**
+`$ yarn typeorm migration:create -n CreateSurveys`
+ assim é gerado um arquivo na pasta **migrations** que deve ser configurado com as propriedades da tabela, neste caso da tabela **surveys**. E está pronto para rodar.
+
+Para rodar a Migration e criar a tabela **surveys**
+`$ yarn typeorm migration:run` (Roda todas as Migrations)
